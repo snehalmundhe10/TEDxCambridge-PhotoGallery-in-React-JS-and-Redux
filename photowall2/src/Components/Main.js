@@ -26,7 +26,13 @@ class Main extends Component{
     }
   }
   removePhoto(postRemoved){
-    console.log(postRemoved.description);
+    console.log(postRemoved.description)
+    this.setState((state)=>(
+    {
+
+      
+    }
+    ));
 
   }
    render(){
