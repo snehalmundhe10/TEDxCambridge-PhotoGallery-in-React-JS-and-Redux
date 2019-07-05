@@ -11,6 +11,7 @@ class Main extends Component{
       posts : []
     }
     this.removePhoto=this.removePhoto.bind(this);
+    console.log('constructor')
   }
   removePhoto(postRemoved){
     console.log(postRemoved.description)
@@ -24,13 +25,17 @@ class Main extends Component{
   componentDidMount(){
      const data=simulateFetchFromDatabase()
      this.setState({posts:data})
+     console.log('componentDidMount')
   }
    render(){
+     console.log('render')
      return <div>
      <Title title={'TEDxCambridge'}/>
      <PhotoWall posts={this.state.posts} onRemovePhoto={this.removePhoto}/>
      </div>
+
    }
+
 }
 
 function simulateFetchFromDatabase(){
