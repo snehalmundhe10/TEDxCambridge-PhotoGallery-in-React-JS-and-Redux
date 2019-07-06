@@ -47,6 +47,7 @@ class Main extends Component{
      return <div>
      <Title title={'TEDxCambridge'}/>
      <PhotoWall posts={this.state.posts} onRemovePhoto={this.removePhoto}/>
+     <AddPhoto/>
      </div>
 
    }
