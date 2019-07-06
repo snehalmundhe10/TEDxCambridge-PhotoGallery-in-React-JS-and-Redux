@@ -28,7 +28,7 @@ class Main extends Component{
        screen:'photos'
     }
     this.removePhoto=this.removePhoto.bind(this);
-    this.navigate=this.navigate.bind(this);
+  
     console.log('constructor')
   }
   removePhoto(postRemoved){
@@ -40,11 +40,7 @@ class Main extends Component{
     ));
   }
 
-  navigate(){
-    this.setState({
-      screen:'addPhoto'
-    })
-  }
+
 
 
   componentDidMount(){
