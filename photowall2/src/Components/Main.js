@@ -45,16 +45,19 @@ class Main extends Component{
    render(){
      console.log('render')
      return <div>
-
+    {
+      this.state.screen==='photos' &&(
      <div>
      <Title title={'TEDxCambridge'}/>
      <PhotoWall posts={this.state.posts} onRemovePhoto={this.removePhoto}/>
      </div>
-
+   )
+   }
+   {
      <div>
      <AddPhoto/>
      </div>
-
+   }
      </div>
 
    }
