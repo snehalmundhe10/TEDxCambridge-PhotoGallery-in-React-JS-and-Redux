@@ -54,21 +54,18 @@ class Main extends Component{
 
    render(){
      console.log('render')
-     return <div>
-
-     <div>
-     <Title title={'TEDxCambridge'}/>
-     <PhotoWall posts={this.state.posts} onRemovePhoto={this.removePhoto} onNavigate={this.navigate}/>
-     </div>
-
-     <div>
-     <AddPhoto/>
-     </div>
-  
-     </div>
-
+     return (
+    <div>
+     <Route exact path="/" render={() => (
+       <div>
+       <Title title={'TEDxCambridge'}/>
+       <PhotoWall posts={this.state.posts} onRemovePhoto={this.removePhoto} onNavigate={this.navigate}/>
+       </div>
+     )}/>
+     <Route path="/AddPhoto" component={AddPhoto} />
+    </div>
+   )
    }
-
 }
 
 
