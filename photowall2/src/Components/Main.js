@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Title from './Title'
 import PhotoWall from './PhotoWall'
 import AddPhoto from './AddPhoto'
+import {Route} from 'react-router-dom'
 
 
 
@@ -49,24 +50,21 @@ class Main extends Component{
   componentDidMount(){
      console.log('componentDidMount')
   }
+
+
    render(){
      console.log('render')
      return <div>
-    {
-      this.state.screen==='photos' &&(
+
      <div>
      <Title title={'TEDxCambridge'}/>
      <PhotoWall posts={this.state.posts} onRemovePhoto={this.removePhoto} onNavigate={this.navigate}/>
      </div>
-   )
-   }
-   {
-     this.state.screen==='addPhoto' &&(
+
      <div>
      <AddPhoto/>
      </div>
-   )
-   }
+  
      </div>
 
    }
