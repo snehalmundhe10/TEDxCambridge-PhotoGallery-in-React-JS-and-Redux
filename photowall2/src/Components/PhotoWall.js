@@ -5,7 +5,8 @@ import Photo from './Photo'
 
 function PhotoWall(props){
   return <div>
-  <button onClick={props.onNavigate} className="addIcon"></button>
+  <a className="addIcon" onClick={props.onNavigate} href="#AddPhoto"></a>
+  {/*<button onClick={props.onNavigate} className="addIcon"></button>*/}
   <div className="photoGrid">
   {props.posts.map((post,index)=><Photo key={index} post={post} onRemovePhoto={ props.onRemovePhoto}/>)}
   </div>
