@@ -54,9 +54,11 @@ class Main extends Component{
    )
    }
    {
+     this.state.screen==='addPhoto' && (
      <div>
      <AddPhoto/>
      </div>
+   )
    }
      </div>
 
