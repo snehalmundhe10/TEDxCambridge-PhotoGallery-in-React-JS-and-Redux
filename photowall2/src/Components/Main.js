@@ -27,6 +27,7 @@ class Main extends Component{
        screen:'photos'
     }
     this.removePhoto=this.removePhoto.bind(this);
+    this.navigate=this.navigate.bind(this);
     console.log('constructor')
   }
   removePhoto(postRemoved){
@@ -36,10 +37,16 @@ class Main extends Component{
       posts:state.posts.filter(post => post !== postRemoved)
     }
     ));
-
   }
-  componentDidMount(){
 
+  navigate(){
+    this.setState({
+      screen:'addPhoto'
+    })
+  }
+
+
+  componentDidMount(){
      console.log('componentDidMount')
   }
    render(){
@@ -49,12 +56,12 @@ class Main extends Component{
       this.state.screen==='photos' &&(
      <div>
      <Title title={'TEDxCambridge'}/>
-     <PhotoWall posts={this.state.posts} onRemovePhoto={this.removePhoto}/>
+     <PhotoWall posts={this.state.posts} onRemovePhoto={this.removePhoto} onNavigate={this.navigate}/>
      </div>
    )
    }
    {
-     this.state.screen==='addPhoto' && (
+     this.state.screen==='addPhoto' &&(
      <div>
      <AddPhoto/>
      </div>
