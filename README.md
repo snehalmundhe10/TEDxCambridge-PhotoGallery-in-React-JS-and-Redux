@@ -14,3 +14,5 @@ I am developing a photo gallery of TEDxCambridge using ReactJS and Redux.
 
 #### Snapshots of the Application
 
+
+
