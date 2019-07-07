@@ -6,15 +6,15 @@ class AddPhoto extends Component{
     this.handleSubmit=this.handleSubmit.bind(this)
   }
   handleSubmit(event){
-   event.preventDefualt();
+   event.preventDefault();
    const imageLink=event.target.elements.link.value
-    const imageDescription=event.target.elements.description.value
+    const description=event.target.elements.description.value
     const post={
       id:0,
-      description:imageDescription,
+      description:description,
       imageLink:imageLink
     }
-    if(imageDescription && imageLink){
+    if(description && imageLink){
       this.props.onAddPhoto(post)
     }
   }
