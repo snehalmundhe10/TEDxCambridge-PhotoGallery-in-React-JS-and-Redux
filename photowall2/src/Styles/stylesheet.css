@@ -103,3 +103,14 @@ border:none;
 button:hover{
     background:  #cc0000;
 }
+.addMorePhotos{
+  margin:40px 0 0 500px;
+  padding:15px;
+  width:20%;
+  box-sizing: border-box;
+  background: black;
+  font-weight:450;
+  letter-spacing:2px;
+  font-family:'Sans-Serif';
+  /* border:5px solid white; */
+}
