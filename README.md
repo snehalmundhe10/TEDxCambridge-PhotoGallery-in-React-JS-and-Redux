@@ -22,6 +22,6 @@ Admin can add more pictures to the photo gallery
 
 ![alt text](https://github.com/snehalmundhe10/TEDxCambridge-PhotoGallery-in-React-JS-and-Redux/blob/master/photowall2/src/images/snap2.PNG "snap2")
 
-![alt text](https://github.com/snehalmundhe10/TEDxCambridge-PhotoGallery-in-React-JS-and-Redux/blob/master/photowall2/src/images/snap3.PNG "snap3")
+![alt text](https://github.com/snehalmundhe10/TEDxCambridge-PhotoGallery-in-React-JS-and-Redux/blob/master/photowall2/src/images/snap4.PNG "snap4")
 
 
