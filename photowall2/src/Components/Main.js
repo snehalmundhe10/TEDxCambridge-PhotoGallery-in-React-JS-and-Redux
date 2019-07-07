@@ -69,10 +69,10 @@ addPhoto(postSubmitted){
        <PhotoWall posts={this.state.posts} onRemovePhoto={this.removePhoto} onNavigate={this.navigate}/>
        </div>
      )}/>
-     <Route path="/AddPhoto" render={(addedPost)=>
-       <AddPhoto onAddPhoto={() =>
-       console.log(addedPost)
-       }/>
+     <Route path="/AddPhoto" render={(history)=>
+       <AddPhoto onAddPhoto={(addedPost) =>
+        this.addPhoto(addedPost)
+      }/>
      } component={AddPhoto} />
     </div>
    )
