@@ -11,3 +11,6 @@ I am developing a photo gallery of TEDxCambridge using ReactJS and Redux.
 6. Used props to pass the data.
 7. Compartmentalize the web page into Components.
 8. Updated Component State to ensure responsive and interactive applications.
+
+#### Snapshots of the Application
+
