@@ -9,9 +9,13 @@ class AddPhoto extends Component{
    event.preventDefualt();
    const imageLink=event.target.elements.link.value
     const imageDescription=event.target.elements.description.value
-    const post=
+    const post={
+      id:0,
+      description:imageDescription,
+      imageLink:imageLink
+    }
     if(imageDescription && imageLink){
-      this.props.onAddPhoto
+      this.props.onAddPhoto(post)
     }
   }
   render(){
