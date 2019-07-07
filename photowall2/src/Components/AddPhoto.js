@@ -9,7 +9,7 @@ class AddPhoto extends Component{
      <form>
      <input type="text" placeholder="Link"/>
      <input type="text" placeholder="Description"/>
-     <button>Post</button>
+     <button>Post </button>
      </form>
      </div>
     </div>
