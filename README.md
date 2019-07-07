@@ -13,6 +13,9 @@ I am developing a photo gallery of TEDxCambridge using ReactJS and Redux.
 8. Updated Component State to ensure responsive and interactive applications.
 
 #### Snapshots of the Application
+Here's our logo (hover to see the title text):
 
+Photo Gallery: 
+![alt text](https://github.com/snehalmundhe10/TEDxCambridge-PhotoGallery-in-React-JS-and-Redux/blob/master/photowall2/src/images/snap1.PNG "snap1")
 
 
