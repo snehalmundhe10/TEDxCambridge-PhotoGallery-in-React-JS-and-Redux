@@ -1,6 +1,7 @@
 html{
   font-size:10px;
   font-family: 'sans-serif';
+  background-color:   #99ebff;
 }
 p{
   font-size: 1.6rem;
@@ -50,13 +51,14 @@ h1{
   justify-content: center;
 }
 
-.remove-button{
+button{
   flex-basis: 48%;
-  color:red;
-  border:2px solid #f2f2f2;
+  color:white;
+  border:none;
   font-size: 15px;
   line-height: 2;
   padding: 5px;
+  background: #ff3333;
 }
 .addIcon{
 margin:20px auto;
@@ -65,4 +67,24 @@ padding: 40px;
 background: url("https://image.flaticon.com/icons/svg/60/60740.svg") center no-repeat;
 background-size: contain;
 border:none;
+}
+
+.form{
+  background:#99ebff;
+  max-width:360px;
+  margin:0 auto;
+  padding:45px;
+  text-align:center;
+}
+
+.form input{
+  font-family:'Sans-Serif';
+  background: #f2f2f2;
+  width:100%;
+  /* border:1px solid #bfbfbf; */
+  border:none;
+  padding: 15px;
+  box-sizing:border-box;
+  font-size: 14px;
+  margin: 0 0 15px;
 }
