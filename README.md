@@ -18,4 +18,6 @@ I am developing a photo gallery of TEDxCambridge using ReactJS and Redux.
  
 ![alt text](https://github.com/snehalmundhe10/TEDxCambridge-PhotoGallery-in-React-JS-and-Redux/blob/master/photowall2/src/images/snap1.PNG "snap1")
 
+![alt text](https://github.com/snehalmundhe10/TEDxCambridge-PhotoGallery-in-React-JS-and-Redux/blob/master/photowall2/src/images/snap2.PNG "snap2")
+
 
