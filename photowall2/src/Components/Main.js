@@ -12,13 +12,14 @@ class Main extends Component{
     console.log('constructor')
   }
    render(){
-     
+
      return (
     <div>
      <Route exact path="/" render={() => (
        <div>
        <Title title={'TEDxCambridge'}/>
        {/*<PhotoWall posts={this.state.posts} onRemovePhoto={this.removePhoto} onNavigate={this.navigate}/>*/}
+       <PhotoWall posts={this.props.posts}/>
        </div>
      )}/>
 
