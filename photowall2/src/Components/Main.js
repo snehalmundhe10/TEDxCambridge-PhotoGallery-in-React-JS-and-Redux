@@ -12,7 +12,7 @@ class Main extends Component{
     console.log('constructor')
   }
    render(){
-     console.log('render')
+     
      return (
     <div>
      <Route exact path="/" render={() => (
