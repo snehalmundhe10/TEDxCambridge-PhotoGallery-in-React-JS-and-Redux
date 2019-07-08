@@ -18,16 +18,17 @@ class Main extends Component{
      <Route exact path="/" render={() => (
        <div>
        <Title title={'TEDxCambridge'}/>
-       <PhotoWall posts={this.state.posts} onRemovePhoto={this.removePhoto} onNavigate={this.navigate}/>
+       {/*<PhotoWall posts={this.state.posts} onRemovePhoto={this.removePhoto} onNavigate={this.navigate}/>*/}
        </div>
      )}/>
 
-     <Route path= "/AddPhoto" render = {({history}) => (
- <AddPhoto onAddPhoto={(addedPost) => {
- this.addPhoto(addedPost)
- history.push('/')
- }}/>
- )}/>
+  {/*     <Route path= "/AddPhoto" render = {({history}) => (
+  <AddPhoto onAddPhoto={(addedPost) => {
+  this.addPhoto(addedPost)
+  history.push('/')
+  }}/>
+)}/>*/}
+
     </div>
    )
    }
