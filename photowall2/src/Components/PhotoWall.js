@@ -1,19 +1,33 @@
-import React, { Component } from 'react';
+import React from 'react'
+import PropTypes from 'prop-types'
 import Photo from './Photo'
-import { Link } from 'react-router-dom'
-class PhotoWall extends Component {
- render() {
- return (
- <div>
- <Link to='/create' className="addpicture"></Link>
- <div className="photo-grid">
- {console.log(this.props)}
- {this.props.posts.sort(function(x, y){return y.id - x.id;}).map((post, i) => {
- return <Photo key={i} post={post} i={i} {...this.props}/>
- })}
- </div>
- </div>
- );
- }
+import {Link} from 'react-router-dom'
+
+
+function PhotoWall(props){
+  return <div>
+
+  {/*<button onClick={props.onNavigate} className="addIcon"></button>*/}
+  <div className="photoGrid">
+  {props.posts.sort(function(x,y){
+    return y.id-x.id
+  })
+
+    .map((post,index)=><Photo key={index} post={post} onRemovePhoto={ props.onRemovePhoto}/>)}
+
+  </div>
+
+  <Link to="/AddPhoto">
+  <button className="addMorePhotos">Add More Photos</button>
+  </Link>
+  </div>
 }
-export default PhotoWall;
+
+PhotoWall.propTypes={
+  posts:PropTypes.array.isRequired,
+  onRemovePhoto: PropTypes.func.isRequired
+}
+
+
+
+export default PhotoWall
