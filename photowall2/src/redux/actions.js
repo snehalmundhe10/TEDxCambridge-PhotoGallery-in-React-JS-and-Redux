@@ -1,17 +1,15 @@
+export function addPicture(id, imageLink, description) {
+ return {
+ type: 'ADD_PICTURE',
+ id,
+ imageLink,
+ description
+ }
+ }
 
-
-export function removePost(index)
- {
-  return {
-    type:'REMOVE_POST',
-    index:index
-  }
-}
-
-export function addPost(post)
- {
-  return {
-    type:'ADD_POST',
-    post:post
-  }
-}
+ export function removePicture(i) {
+ return {
+ type: 'REMOVE_PICTURE',
+ i
+ }
+ }
