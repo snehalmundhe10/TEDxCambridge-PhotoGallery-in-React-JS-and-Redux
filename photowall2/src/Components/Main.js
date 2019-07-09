@@ -12,10 +12,10 @@ class Main extends Component{
     console.log('constructor')
   }
 
-  // componentDidMount(){
-  //   this.props.dispatch(removePost(1))
-  //
-  // }
+  componentDidMount(){
+    this.props.removePost(1)
+
+  }
 
 
    render(){
