@@ -1,4 +1,4 @@
-const posts : [{
+const posts = [{
  id: 0,
  description: " ",
  imageLink: "https://pi.tedcdn.com/r/pe.tedcdn.com/images/ted/61f4f84fa3604cd3d321fa15a767696947a496e6_1600x1200.jpg?quality=90&w=260"
