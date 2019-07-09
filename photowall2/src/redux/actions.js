@@ -1,6 +1,6 @@
 function removePost(index){
   return {
-    type:'REMOVE_POST'
+    type:'REMOVE_POST',
     index:index
   }
 }

@@ -3,7 +3,7 @@ import Title from './Title'
 import PhotoWall from './PhotoWall'
 import AddPhoto from './AddPhoto'
 import {Route} from 'react-router-dom'
-import {removePost} from '../redux/action'
+import {removePost} from '../redux/actions'
 
 
 class Main extends Component{

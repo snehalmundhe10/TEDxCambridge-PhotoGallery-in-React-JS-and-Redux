@@ -1,5 +1,8 @@
 import Main from './Main'
 import {connect} from 'react-redux'
+import {bindActionCreators} from 'redux'
+import {removePost} from '../redux/actions'
+
 function mapStateToProps(state){
    return {
      posts:state
@@ -11,5 +14,11 @@ function mapStateToProps(state){
   its connected component copy that connects it to the store of the redux-so basically App is the
   clone of the Main component which has assigned the props-but the App is 'connected component'-component of
   redux*/}
+
+  function mapDispatchToProps(dispatch){
+
+      return  bindActionCreators({removePost},dispatch)
+     
+  }
 const App=connect(mapStateToProps)(Main)
 export default App
