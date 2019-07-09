@@ -7,9 +7,10 @@ import {removePost} from  '../redux/actions'
 
 
 class Main extends Component{
-  constructor(){
-    super()
+  constructor(props){
+    super(props);
     console.log('constructor')
+     
   }
 
   // componentDidMount()
@@ -32,7 +33,7 @@ class Main extends Component{
      )}/>
 
        <Route path= "/AddPhoto" render = {({history}) => (
-  <AddPhoto/>
+  <AddPhoto {...this.props} onHistory={history}/>
     )}/>
 
     </div>

@@ -1,36 +1,28 @@
-import React,{Component} from 'react'
-
-class AddPhoto extends Component{
-  constructor(){
-    super()
-    this.handleSubmit=this.handleSubmit.bind(this)
-  }
-  handleSubmit(event){
-   event.preventDefault();
-   const imageLink=event.target.elements.link.value
-    const description=event.target.elements.description.value
-    const post={
-      id:Number(new Date()),
-      description:description,
-      imageLink:imageLink
-    }
-    if(description && imageLink){
-      this.props.onAddPhoto(post)
-    }
-  }
-  render(){
-     return (
-    <div>
-     <h1>Add Photo</h1>
-     <div className="form">
-     <form onSubmit={this.handleSubmit}>
-     <input type="text" placeholder="Link" name="link"/>
-     <input type="text" placeholder="Description" name="description"/>
-     <button>Post </button>
-     </form>
-     </div>
-    </div>
-   )
-  }
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
+import serializeForm from 'form-serialize'
+class Single extends Component {
+ handleSubmit = (e) => {
+ e.preventDefault()
+ const values = serializeForm(e.target, { hash: true })
+ if (values["imageLink"] && values["description"]) {
+ values.id = Number(new Date())
+ this.props.addPicture(values.id,values.imageLink,values.description)
+ this.props.history.push('/')
+ }
+ }
+ render() {
+ return (
+ <div className="add-post">
+<div className="form" onSubmit={this.handleSubmit}>
+<form className="add-form">
+ <input name="imageLink" placeholder="Link"/>
+ <input name="description" placeholder="Description"/>
+ <button>Post</button>
+</form>
+</div>
+ </div>
+ );
+ }
 }
-export default AddPhoto
+export default Single;
