@@ -17,7 +17,7 @@ function Photo(props){
 
 Photo.propTypes={
   post:PropTypes.object.isRequired,
-  onRemovePhoto:PropTypes.func.isRequired
+
 }
 
 
