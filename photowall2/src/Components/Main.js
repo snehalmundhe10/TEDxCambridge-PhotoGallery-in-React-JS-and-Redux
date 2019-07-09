@@ -3,7 +3,7 @@ import Title from './Title'
 import PhotoWall from './PhotoWall'
 import AddPhoto from './AddPhoto'
 import {Route} from 'react-router-dom'
-
+import {removePost} from '../redux/action'
 
 
 class Main extends Component{
@@ -11,6 +11,13 @@ class Main extends Component{
     super()
     console.log('constructor')
   }
+
+  componentDidMount(){
+   this.props.dispatch(removePost(1))
+
+  }
+
+
    render(){
 
      return (
