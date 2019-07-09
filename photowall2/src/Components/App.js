@@ -2,6 +2,7 @@ import Main from './Main'
 import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
 import {removePost} from '../redux/actions'
+import {withRouter} from 'react-router'
 
 function mapStateToProps(state){
    return {
@@ -18,7 +19,7 @@ function mapStateToProps(state){
   function mapDispatchToProps(dispatch){
 
       return  bindActionCreators({removePost},dispatch)
-     
+
   }
-const App=connect(mapStateToProps)(Main)
+const App=withRouter(connect(mapStateToProps)(Main))
 export default App

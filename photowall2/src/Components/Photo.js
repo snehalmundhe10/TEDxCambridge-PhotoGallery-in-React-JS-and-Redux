@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import {removePost} from '../redux/actions'
 
 function Photo(props){
     const post=props.post
@@ -9,7 +10,7 @@ function Photo(props){
   <div className="button-container">
   <button onClick={() => {
     props.removePost(props.index)
-  }}>Remove</button>
+  }}> Remove </button>
   </div>
   </figure>
 
