@@ -7,7 +7,7 @@ function Photo(props){
   <img className="photo" src={post.imageLink} alt={post.description}/>
   <figcaption><p>{post.description}</p></figcaption>
   <div className="button-container">
-  <button onClick={() =>{
+  <button onClick={() => {
     props.removePost(props.index)
   }}>Remove</button>
   </div>
