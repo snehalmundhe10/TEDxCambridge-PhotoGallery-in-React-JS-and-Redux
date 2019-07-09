@@ -1,11 +1,13 @@
-import posts from '../data/posts'
-
-const postReducer=function posts(state=posts,action){
-  switch(action.type){
-    case'REMOVE_POST': return  [...state.slice(0,action.index),...state.slice(action.index+1)]
-    case'ADD_POST': return  [...state,action.post]
-    default: return state
-  }
-  return state
+import {combineReducers } from 'redux';
+import _posts from '../data/posts';
+ const postReducer = function posts(state = _posts, action) {
+ console.log(action.type)
+ switch(action.type) {
+ case 'REMOVE_PICTURE' :
+ return [...state.slice(0,action.i),...state.slice(action.i + 1)]
+ case 'ADD_PICTURE' :
+ return [{"id": action.id, "imageLink": action.imageLink, "description": action.description},...state]
+ default: return state
+ }
 }
-export default postReducer
+ export default postReducer;
