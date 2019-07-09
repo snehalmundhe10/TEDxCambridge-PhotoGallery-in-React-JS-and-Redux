@@ -3,14 +3,12 @@ I volunteered at TEDxCambridge in Spring 2019.
 I am developing a photo gallery of TEDxCambridge using ReactJS and Redux.
 
 #### What I have achieved:-
-1. Built this web application with React,Redux and CSS
-2. Used Redux to manage the data.
-3. Connected the application with the firebase 
-4. Used React Router to navigate through the application.
-5. Used JSX to build user interfaces.
-6. Used props to pass the data.
-7. Compartmentalize the web page into Components.
-8. Updated Component State to ensure responsive and interactive applications.
+1. Built this web application with React and CSS 
+2. Used React Router to navigate through the application.
+3. Used JSX to build user interfaces.
+4. Used props to pass the data.
+5. Compartmentalize the web page into Components.
+6. Updated Component State to ensure responsive and interactive applications.
 
 #### Snapshots of the Application:-
  
