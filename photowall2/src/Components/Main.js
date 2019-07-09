@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom'
 import PhotoWall from '../Components/PhotoWall'
-import AddPost from '../Components/AddPost'
+import AddPost from '../Components/AddPhoto'
 import { Route,Switch } from 'react-router-dom'
 class Main extends Component {
  render() {
