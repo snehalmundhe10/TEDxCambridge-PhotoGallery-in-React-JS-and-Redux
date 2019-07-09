@@ -12,10 +12,10 @@ class Main extends Component{
     console.log('constructor')
   }
 
-  componentDidMount(){
-    this.props.dispatch(removePost(1))
-
-  }
+  // componentDidMount(){
+  //   this.props.dispatch(removePost(1))
+  //
+  // }
 
 
    render(){
@@ -26,7 +26,7 @@ class Main extends Component{
        <div>
        <Title title={'TEDxCambridge'}/>
        {/*<PhotoWall posts={this.state.posts} onRemovePhoto={this.removePhoto} onNavigate={this.navigate}/>*/}
-       <PhotoWall posts={this.props.posts}/>
+       <PhotoWall {...this.props}/>
        </div>
      )}/>
 
