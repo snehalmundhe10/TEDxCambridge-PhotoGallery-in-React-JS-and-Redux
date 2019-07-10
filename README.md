@@ -1,4 +1,4 @@
-# TEDxCambridge-PhotoGallery-in-React-JS
+# TEDxCambridge-PhotoGallery-in-React-JS and Redux
 I volunteered at TEDxCambridge in Spring 2019. 
 I am developing a photo gallery of TEDxCambridge using ReactJS and Redux.
 
